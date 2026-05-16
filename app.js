@@ -8,6 +8,9 @@ app.use(express.json());
 
 // Route kuda
 app.use('/kuda', require('./routers/kuda'));
+app.use('/transaksi', require('./routers/transaksi'));
+app.use('/statistik', require('./routers/statistik'));
+
 
 app.get('/', (req, res) => {
     res.send('API Peternakan Kuda Berjalan');
